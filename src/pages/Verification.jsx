@@ -13,7 +13,6 @@ const Verification = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí iría la lógica para validar el código
     console.log("Código ingresado:", code);
   };
 

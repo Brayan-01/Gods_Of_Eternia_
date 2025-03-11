@@ -1,17 +1,21 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Verification from "./pages/Verification";
+import Header from "./components/Header"; 
+import "./styles.css";
 
-function App() {
+const App = () => {
   return (
-    <Router>
+    <>
+      <Header />
       <Routes>
-        <Route path="/" element={<h1>Bienvenido a Gods of Eternia</h1>} />
+        <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/verification" element={<Verification />} />
       </Routes>
-    </Router>
+    </>
   );
-}
+};
 
 export default App;

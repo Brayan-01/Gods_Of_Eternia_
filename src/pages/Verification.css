@@ -11,7 +11,7 @@
 }
 
 .loading-screen {
-  color: #F87060;
+  color: #9b7e20;
   font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
@@ -19,7 +19,7 @@
 }
 
 .verification-box {
-  background: rgba(248, 112, 96, 0.9);
+  background: #9b7e20;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
