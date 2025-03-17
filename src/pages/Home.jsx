@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
+import Leaderboard from "../pages/Leaderboard"; 
 import Footer from "../components/Footer";
 
 function Home() {
@@ -26,6 +27,8 @@ function Home() {
               <Link to="/register">
                 <button className="play-button">Jugar Ahora</button>
               </Link>
+              
+              <Leaderboard />
             </div>
           </div>
         </section>

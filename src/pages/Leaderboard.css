@@ -1,0 +1,45 @@
+.leaderboard-container {
+    width: 80%;
+    max-width: 400px;
+    margin: 70px auto; /* Agregar más margen para separación */
+    padding: 15px;
+    background: linear-gradient(#9b7e20, #774b1f) ;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .leaderboard-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #F87060;
+    text-transform: uppercase;
+  }
+  
+  .leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px; /* Aumentar tamaño de fuente */
+  }
+  
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #f1f1f1; /* Asegurar contraste alto */
+  }
+  
+  .leaderboard-table th {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+  }
+  
+  .leaderboard-row:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .leaderboard-row:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+  }
