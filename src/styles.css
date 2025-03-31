@@ -107,7 +107,6 @@ main {
 }
 
 
-/* Botón */
 .play-button {
   background: linear-gradient(to right, #c4a484, #ffd700);
   color: #2b1d0f;
@@ -123,7 +122,7 @@ main {
   transform: scale(1.05);
 }
 
-/* Footer */
+
 .footer {
   background: linear-gradient(#9b7e20, #774b1f);
   padding: 40px 20px;

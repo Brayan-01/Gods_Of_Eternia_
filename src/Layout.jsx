@@ -16,7 +16,7 @@ function Layout() {
       </header>
 
       <main className="pt-20">
-        <Outlet /> {/* Aquí se renderizan las páginas */}
+        <Outlet /> 
       </main>
     </div>
   );

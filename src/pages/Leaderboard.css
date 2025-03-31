@@ -1,45 +1,74 @@
-.leaderboard-container {
-    width: 80%;
-    max-width: 400px;
-    margin: 70px auto; /* Agregar más margen para separación */
-    padding: 15px;
-    background: linear-gradient(#9b7e20, #774b1f) ;
-    color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
+.leaderboards-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.leaderboards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .leaderboards-container {
+    flex-wrap: wrap;
+    gap: 30px; 
   }
   
-  .leaderboard-title {
-    font-size: 22px;
-    margin-bottom: 12px;
-    color: #F87060;
-    text-transform: uppercase;
-  }
-  
-  .leaderboard-table {
+  .leaderboard-container {
     width: 100%;
-    border-collapse: collapse;
-    font-size: 16px; /* Aumentar tamaño de fuente */
+    max-width: 300px;
   }
-  
-  .leaderboard-table th,
-  .leaderboard-table td {
-    padding: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    color: #f1f1f1; /* Asegurar contraste alto */
-  }
-  
-  .leaderboard-table th {
-    background: rgba(255, 255, 255, 0.2);
-    font-weight: bold;
-  }
-  
-  .leaderboard-row:nth-child(odd) {
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
-  .leaderboard-row:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transition: background 0.3s ease;
-  }
+}
+
+.leaderboard-container {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 20px 0;
+  padding: 15px;
+  background: linear-gradient(#9b7e20, #774b1f);
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.leaderboard-title {
+  font-size: 18px !important;
+  margin-bottom: 10px;
+  color:rgb(61, 53, 17);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #f1f1f1;
+}
+
+.leaderboard-table th {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.leaderboard-row:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.leaderboard-row:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}

@@ -1,24 +1,23 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Verification from "./Verification"; // Importamos la pantalla de verificación
+import Verification from "./Verification";
 import "./Register.css";
 
 const Register = () => {
     const [loading, setLoading] = useState(true);
-    const [isRegistered, setIsRegistered] = useState(false); // Estado para cambiar a verificación
+    const [isRegistered, setIsRegistered] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setLoading(false), 2000); // Simula la carga de la página
+        setTimeout(() => setLoading(false), 2000); 
     }, []);
 
     const handleRegister = (e) => {
         e.preventDefault();
-        // Aquí iría la lógica de registro, pero por ahora solo cambiamos el estado
         setIsRegistered(true);
     };
 
     if (isRegistered) {
-        return <Verification />; // Muestra la verificación después del registro
+        return <Verification />; 
     }
 
     return (
