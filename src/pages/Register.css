@@ -20,7 +20,7 @@
 }
 
 .register-box {
-  background: #9b7e20;
+  background: linear-gradient(#9b7e20, #774b1f);
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);

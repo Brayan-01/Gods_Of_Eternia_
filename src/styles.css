@@ -1,4 +1,4 @@
-/* Asegura que el footer se quede abajo */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -16,7 +16,7 @@ html, body {
   flex: 1; 
 }
 
-/* Sección Hero */
+
 .hero-section {
   min-height: 100vh;
   display: flex;
@@ -57,29 +57,129 @@ html, body {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500&display=swap');
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(90deg, #9b7e20, #774b1f); 
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  padding: 10px 0;
+  background: linear-gradient(to right, #3e1f0d, #8b4513, #9b7e20);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  padding: 12px 0;
   z-index: 100;
-  border-bottom: 2px solid #c4a484;
+  border-bottom: 2px solid #9b59b6;
 }
 
-
-
 .header-container {
-  max-width: 1100px; 
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.game-logo {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.game-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #8b5a2b; /* Color base más oscuro, dorado antiguo */
+  margin: 0;
+  letter-spacing: 1px;
+  position: relative;
+  -webkit-background-clip: text;
+  background-clip: text;  
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    #8b5a2b,
+    #8b5a2b,
+    #c69c6d,
+    #8b5a2b,
+    #8b5a2b
+  );
+  animation: shine 4s linear infinite;
+  /* Texto transparente para que se vea el gradiente */
+  color: transparent;
+  /* Para navegadores que no soportan background-clip */
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #e0e0e0;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f8d64e;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #f8d64e;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .logo-container {
+    margin-bottom: 10px;
+  }
+  
+  .nav {
+    gap: 15px;
+  }
+  
+  .game-title {
+    font-size: 24px;
+  }
 }
 
 .logo {
@@ -155,4 +255,15 @@ main {
 
 .footer a:hover {
   color: #c4a484;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons a {
+  font-size: 2em;
+  margin: 0 15px;
 }
