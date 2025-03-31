@@ -63,7 +63,7 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(90deg, #9b7e20, #774b1f); /* Degradado dorado */
+  background: linear-gradient(90deg, #9b7e20, #774b1f); 
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding: 10px 0;
