@@ -10,7 +10,7 @@ const Leaderboard = ({ title, players }) => {
           <tr>
             <th>#</th>
             <th>Jugador</th>
-            <th>Tiempo (s)</th>
+            <th>Tiempo(s)</th>
           </tr>
         </thead>
         <tbody>

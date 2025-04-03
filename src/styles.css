@@ -89,13 +89,14 @@ html, body {
   height: 50px;
   width: auto;
   margin-right: 15px;
+  border-radius:50%;
 }
 
 .game-title {
   font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 28px;
-  color: #8b5a2b; /* Color base más oscuro, dorado antiguo */
+  color: #8b5a2b; 
   margin: 0;
   letter-spacing: 1px;
   position: relative;
@@ -111,9 +112,7 @@ html, body {
     #8b5a2b
   );
   animation: shine 4s linear infinite;
-  /* Texto transparente para que se vea el gradiente */
   color: transparent;
-  /* Para navegadores que no soportan background-clip */
   -webkit-text-fill-color: transparent;
 }
 
@@ -162,7 +161,7 @@ html, body {
   width: 100%;
 }
 
-/* Para pantallas más pequeñas */
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;

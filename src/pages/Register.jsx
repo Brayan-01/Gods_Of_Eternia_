@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Verification from "./Verification";
 import "./Register.css";
 
 const Register = () => {
     const [loading, setLoading] = useState(true);
     const [isRegistered, setIsRegistered] = useState(false);
+    const [showPassword, setShowPassword] = useState(false);
 
     useEffect(() => {
         setTimeout(() => setLoading(false), 2000); 
@@ -17,7 +19,7 @@ const Register = () => {
     };
 
     if (isRegistered) {
-        return <Verification />; 
+        return <Verification />;
     }
 
     return (
@@ -42,7 +44,23 @@ const Register = () => {
                     <form onSubmit={handleRegister}>
                         <input type="text" placeholder="Usuario" required />
                         <input type="email" placeholder="Correo" required />
-                        <input type="password" placeholder="Contraseña" required />
+
+                        {/* Contenedor de la contraseña con ícono */}
+                        <div className="password-container">
+                            <input 
+                                type={showPassword ? "text" : "password"} 
+                                placeholder="Contraseña" 
+                                required 
+                                className="password-input"
+                            />
+                            <span 
+                                className="eye-button"
+                                onClick={() => setShowPassword(!showPassword)}
+                            >
+                                {showPassword ? <FaEyeSlash /> : <FaEye />}
+                            </span>
+                        </div>
+
                         <button type="submit">Registrarse</button>
                     </form>
                 </motion.div>
